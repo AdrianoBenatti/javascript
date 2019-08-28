@@ -1,0 +1,64 @@
+<!--suppress ALL -->
+<html>
+<head>
+	<title>Curso JavaScript</title>
+</head>
+<body>
+
+<div class="app">
+	<button class="botao">Criar Elemento</button>
+	<ul class="lista">
+	
+	</ul>
+	
+	<input type="text" name="nome">
+</div>
+
+<script>
+
+
+
+	var btn = document.querySelector('.botao');
+	var lista = document.querySelector('.lista');
+	var text, i, li, tamanho, nomes, total, j;
+
+	function listanomes() {
+		nomes = [];
+		addnome = document.getElementsByName('nome')[0].value;
+		nomes[i] = addnome;
+		li = document.createElement('li');
+		text = document.createTextNode(nomes[i]);
+		li.appendChild(text);
+		lista.appendChild(li);
+		document.getElementsByName('nome')[0].value='';
+		i++;
+	}
+
+	btn.onclick = function () {
+		listanomes();
+	}
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
