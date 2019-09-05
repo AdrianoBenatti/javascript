@@ -13,7 +13,7 @@
 	}
 */
 
-
+/*PROMISSE
 var minhaPromisse = function () {
 	return new Promise(function (resolve, reject) {
 		var xhr = new XMLHttpRequest();
@@ -31,12 +31,12 @@ var minhaPromisse = function () {
 		}
 
 	});
-}
+}*/
 
-minhaPromisse()
+axios.get('https://api.github.com/users/diego3g')
 	.then(function (response) {
-		console.log(response);
+		console.log(response.data.avatar);
 	})
 	.catch(function (error) {
 		console.warn(error);
-	})
+	});
